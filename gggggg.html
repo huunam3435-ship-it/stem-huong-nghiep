@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>STEM – Học Tập & Hướng Nghiệp Lớp 12</title>
+
+<style>
+:root{
+    --blue:#4facfe;
+    --purple:#8f94fb;
+    --green:#43e97b;
+}
+body{
+    margin:0;
+    font-family:'Segoe UI',Arial;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+}
+header{
+    padding:30px;
+    text-align:center;
+    background:linear-gradient(135deg,#1565c0,#42a5f5);
+}
+nav{
+    display:flex;
+    justify-content:center;
+    background:#0d47a1;
+}
+nav button{
+    background:none;
+    border:none;
+    color:white;
+    padding:15px 25px;
+    font-size:16px;
+    cursor:pointer;
+    font-weight:600;
+}
+nav button:hover{background:#1976d2;}
+
+.section{
+    display:none;
+    padding:30px;
+    max-width:1200px;
+    margin:auto;
+}
+.section.active{display:block;}
+
+.card{
+    background:white;
+    color:#000;
+    border-radius:16px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+.card h2{color:#0d47a1;}
+
+.jobs{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+.job{
+    background:linear-gradient(135deg,#1f1f1f,#2c2c2c);
+    padding:25px;
+    border-radius:18px;
+    cursor:pointer;
+    transition:.3s;
+    text-align:center;
+}
+.job:hover{
+    transform:translateY(-8px);
+    background:linear-gradient(135deg,var(--blue),var(--purple));
+}
+.icon{font-size:42px;margin-bottom:10px;}
+
+.box{
+    background:rgba(0,0,0,.4);
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+}
+button.choice{
+    width:80%;
+    max-width:500px;
+    margin:10px;
+    padding:14px;
+    border-radius:12px;
+    border:none;
+    background:linear-gradient(135deg,var(--green),#38f9d7);
+    font-weight:600;
+    cursor:pointer;
+}
+.back{
+    margin:15px;
+    padding:10px 18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+}
+.result{
+    background:linear-gradient(135deg,#43e97b,#38f9d7);
+    color:#000;
+}
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0d47a1;
+}
+a{color:#0d47a1;text-decoration:none;}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🚀 STEM – HỌC TẬP & HƯỚNG NGHIỆP LỚP 12</h1>
+    <p>Toán – Lý – Hóa • Trắc nghiệm nghề nghiệp</p>
+</header>
+
+<nav>
+    <button onclick="showSection('study')">📘 Học tập</button>
+    <button onclick="showSection('career')">🎓 Hướng nghiệp</button>
+</nav>
+
+<!-- ===== HỌC TẬP ===== -->
+<div id="study" class="section active">
+    <div class="card">
+        <h2>➗ Toán</h2>
+        <ul>
+            <li><a href="https://khanacademy.org/math" target="_blank">Khan Academy</a></li>
+            <li><a href="https://vietjack.com/toan-12/" target="_blank">VietJack Toán 12</a></li>
+            <li><a href="https://tuyensinh247.com/toan.html" target="_blank">Đề Toán</a></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>⚡ Vật Lý</h2>
+        <ul>
+            <li><a href="https://vietjack.com/vat-ly-12/" target="_blank">VietJack Lý</a></li>
+            <li><a href="https://hocmai.vn/khoa-hoc/vat-ly" target="_blank">Hocmai</a></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🧪 Hóa Học</h2>
+        <ul>
+            <li><a href="https://vietjack.com/hoa-hoc-12/" target="_blank">VietJack Hóa</a></li>
+            <li><a href="https://tuyensinh247.com/hoa-hoc.html" target="_blank">Đề Hóa</a></li>
+        </ul>
+    </div>
+
+    <!-- ===== ỨNG DỤNG TOÁN – LÝ – HÓA ===== -->
+    <div class="card">
+        <h2>🔬 Ứng dụng của Toán – Lý – Hóa trong thực tiễn</h2>
+        <ul>
+            <li><b>Toán học:</b> Ứng dụng trong lập trình, trí tuệ nhân tạo, tài chính, kinh tế,
+                xây dựng mô hình dự báo và giải quyết các bài toán tối ưu.</li>
+            <li><b>Vật lý:</b> Là nền tảng của kỹ thuật điện – điện tử, cơ khí, năng lượng,
+                công nghệ ô tô, hàng không vũ trụ và quốc phòng.</li>
+            <li><b>Hóa học:</b> Ứng dụng trong y dược, sản xuất vật liệu mới, công nghiệp thực phẩm,
+                môi trường, mỹ phẩm và công nghệ sinh học.</li>
+        </ul>
+        <p>
+            Ba môn Toán – Lý – Hóa giữ vai trò cốt lõi trong các ngành STEM,
+            giúp học sinh phát triển tư duy khoa học, khả năng phân tích và
+            giải quyết vấn đề trong học tập cũng như đời sống.
+        </p>
+    </div>
+</div>
+
+<!-- ===== HƯỚNG NGHIỆP ===== -->
+<div id="career" class="section">
+    <h2>🎓 GAME HƯỚNG NGHIỆP</h2>
+    <p>Chọn nghề để trải nghiệm</p>
+
+    <div id="jobList" class="jobs">
+        <div class="job" onclick="startGame('Lập trình viên')"><div class="icon">👨‍💻</div>Lập trình</div>
+        <div class="job" onclick="startGame('Kỹ sư AI')"><div class="icon">🤖</div>Kỹ sư AI</div>
+        <div class="job" onclick="startGame('Bác sĩ')"><div class="icon">🩺</div>Bác sĩ</div>
+        <div class="job" onclick="startGame('Giáo viên')"><div class="icon">🍎</div>Giáo viên</div>
+        <div class="job" onclick="startGame('Bộ đội')"><div class="icon">🪖</div>Bộ đội</div>
+        <div class="job" onclick="startGame('Thiết kế')"><div class="icon">🎨</div>Thiết kế</div>
+    </div>
+
+    <div id="game"></div>
+
+    <button class="back" onclick="backToJobs()">⬅️ Quay lại chọn nghề</button>
+
+    <div class="card" style="margin-top:30px">
+        <h2>🎯 Ý nghĩa của việc hướng nghiệp</h2>
+        <p>
+            Hướng nghiệp giúp học sinh lớp 12 hiểu rõ năng lực, sở thích và mục tiêu của bản thân,
+            từ đó lựa chọn ngành học và nghề nghiệp phù hợp, tránh lãng phí thời gian và chi phí.
+        </p>
+    </div>
+</div>
+
+<footer>
+    <p>Nhóm 1 – 12A1 | Vũ Thị Quyên-Nguyễn Hữu Nam - Nguyễn Lê Quốc Vương</p>
+</footer>
+
+<script>
+function showSection(id){
+    document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+
+let qIndex=0,score=0,currentJob="";
+const questions=[
+ "Bạn thích giải quyết vấn đề?",
+ "Bạn chịu được áp lực?",
+ "Bạn thích làm việc nhóm?",
+ "Bạn có tư duy logic?",
+ "Bạn muốn đóng góp cho xã hội?"
+];
+
+function startGame(job){
+    currentJob=job;
+    qIndex=0; score=0;
+    document.getElementById("jobList").style.display="none";
+    nextQuestion();
+}
+
+function nextQuestion(){
+    if(qIndex<questions.length){
+        document.getElementById("game").innerHTML=`
+        <div class="box">
+            <h3>${questions[qIndex]}</h3>
+            <button class="choice" onclick="answer(1)">Có</button>
+            <button class="choice" onclick="answer(0)">Không</button>
+        </div>`;
+    }else{
+        document.getElementById("game").innerHTML=`
+        <div class="box result">
+            <h2>${currentJob}</h2>
+            <p>Mức độ phù hợp:
+            ${score>=4?"⭐⭐⭐ Rất phù hợp":score>=2?"⭐⭐ Phù hợp":"⚠️ Cân nhắc"}</p>
+        </div>`;
+    }
+}
+function answer(v){score+=v;qIndex++;nextQuestion();}
+function backToJobs(){
+    document.getElementById("game").innerHTML="";
+    document.getElementById("jobList").style.display="grid";
+}
+</script>
+
+</body>
+</html>
